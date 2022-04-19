@@ -1,0 +1,89 @@
+﻿@model LOLMODEL.Models.ModelGenreViewModel
+
+@{
+    ViewData["Title"] = "My Model List";
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+<link href="~/css/site.css" rel="stylesheet" />
+<h1>Lol Model List</h1>
+<p>
+   
+    <a class="create" asp-action="Create">Create New</a>
+</p>
+<form asp-controller="LolModels" asp-action="Index" method="get">
+    <p>
+        <select asp-for="BookGenre" asp-items="Model.Genres">
+            <option value="">All</option>
+        </select>
+
+        <div class="box-search">
+            Title: <input type="text" name="SearchString" placeholder="Search ..." />
+            <input type="submit" value="Filter" />
+        </div>
+    </p>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Models[0].Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Models[0].ReleaseDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Models[0].Genre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Models[0].Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Models[0].Rating)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Models)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReleaseDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Genre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rating)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+<style>
+    h1 {
+        text-align: center;
+    }
+
+    .box-search {
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+
+    .create {
+    }
+</style>

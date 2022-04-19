@@ -1,0 +1,759 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+<!-- Loader -->
+<link href="~/css/StyleLoader.css" rel="stylesheet" />
+<script src="~/js/loader-3.3.1.mim.js"></script>
+<script src="~/js/scriptloader.js"></script>
+  <div class="preloading">
+      <div class="loader">
+          <!--<img src="https://i.pinimg.com/originals/a9/e5/06/a9e506364ae6b6892e6a126a2f021206.gif">-->
+          <img src="https://media.giphy.com/media/vRgtyq00R4AflDmKFe/giphy.gif">
+      </div>
+  </div>
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://i.imgur.com/0CkjAv9.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to the LOLMODEL shop </h5>
+                    <p>Trang cung cấp mô hình LMHT chính hãng Riot Games số 1 Việt Nam.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <img src="https://i.imgur.com/twBb7CB.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to the LOLMODEL shop</h5>
+                    <p>Mang đến cho bạn những trải nghiệm mua sắm tuyệt vời nhất.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.imgur.com/Bf3PZUo.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to the LOLMODEL shop</h5>
+                    <p>Hơn 50 loại mô hình và các phụ kiện trang trí vô cùng đẹp mắt.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.imgur.com/j5naeMG.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="caption">
+                        <h5>Welcome to the LOLMODEL shop</h5>
+                        <p>Luôn luôn cập nhật các sản phẩm mới nhất.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+</html>
+
+<!-- font awesome cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+<!--/header-->
+
+<section class="menu" id="menu">
+
+    <h1 class="heading"> our <span>menu</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="https://cf.shopee.vn/file/965d7328a957418378ed031e24e4aa56_tn" alt="">
+            <h3>Mô hình Senna</h3>
+            <div class="price">$29.48 <span>30.99</span></div>
+
+            <a class="btn" asp-area="" asp-controller="Menu" asp-action="Senna">thêm vào giỏ</a>
+        </div>
+
+        <div class="box">
+            <img src="https://cf.shopee.vn/file/e4344d3815cdb82ed1b7673d31f1a3d8_tn" alt="">
+            <h3>Mô hình Yasuo</h3>
+            <div class="price">$30.00 <span>39.99</span></div>
+            <a class="btn" asp-area="" asp-controller="Menu" asp-action="Yasuo">thêm vào giỏ</a>
+        </div>
+
+        <div class="box">
+            <img src="https://cf.shopee.vn/file/ba21068dbb473e178deb668c947302b4_tn" alt="">
+            <h3>Mô hình Akali</h3>
+            <div class="price">$29.48 <span>30.99</span></div>
+            <a class="btn" asp-area="" asp-controller="Menu" asp-action="Akali">thêm vào giỏ</a>
+        </div>
+
+        <div class="box">
+            <img src="https://cf.shopee.vn/file/bf0309564396ca32140d84fcd3015f67_tn" alt="">
+            <h3>Mô hình Ekko</h3>
+            <div class="price">$29.48 <span>30.99</span></div>
+            <a class="btn" asp-area="" asp-controller="Menu" asp-action="Ekko">thêm vào giỏ</a>
+        </div>
+
+        <div class="box">
+            <img src="https://cf.shopee.vn/file/5be8258e0397dd9c777a1dbc89edd245" alt="">
+            <h3>Mô hình Qiyana</h3>
+            <div class="price">$29.48 <span>30.99</span></div>
+            <a class="btn" asp-area="" asp-controller="Menu" asp-action="Qiyana">thêm vào giỏ</a>
+        </div>
+
+        <div class="box">
+            <img src="https://cf.shopee.vn/file/80c47c81bbfa90bf61764891d4758e01_tn" alt="">
+            <h3>Mô hình Teemo</h3>
+            <div class="price">$99.99 <span>100.99</span></div>
+            <a class="btn" asp-area="" asp-controller="Menu" asp-action="Teemo">thêm vào giỏ</a>
+        </div>
+
+    </div>
+
+</section>
+<section class="w3l-team" id="team">
+    <div class="teams1 py-5">
+        <div class="container py-lg-3">
+            <div class="teams1-content">
+                <div class="header-section">
+                    <h1 class="heading"> our <span>team</span> </h1>
+                </div>
+                <div class="text-center">
+                    <div class="row align-team-items">
+                        <div class="item col-sm-6 col-md-4">
+                            <div class="team-info">
+                                <div class="column">
+                                    <a href="#URL"><img src="https://storage.googleapis.com/wcorp_public/waifulab/preview/2ddb3f60c50cb306ac6af0ee51aeda911647765725.png" alt="" class="img-fluid" /></a>
+                                </div>
+                                <div class="team-member">
+                                    <h3 class="name-pos"><a>Nguyễn Thanh Tài</a></h3>
+                                    <p>Designer</p>
+                                    <div class="social">
+                                        <a href="https://fb.com/ait.black.50" target="_blank" class="fab fa-facebook-f"></a>
+                                        <a href="https://twitter.com/" target="_blank" class="fab fa-twitter"></a>
+                                        <a href="#instagram" target="_blank" class="fab fa-instagram"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-sm-6 col-md-4">
+                            <div class="team-info">
+                                <div class="column">
+                                    <a href="#URL"><img src="https://storage.googleapis.com/wcorp_public/waifulab/preview/f7989cb9287e5d59b100e0fddd06223d1647763560.png" alt="" class="img-fluid" /></a>
+                                </div>
+                                <div class="team-member">
+                                    <h3 class="name-pos"><a>Trần Như Hy</a></h3>
+                                    <p>Web Developer</p>
+                                    <div class="social">
+                                        <a href="https://www.facebook.com/tranhy82/" target="_blank" class="fab fa-facebook-f"></a>
+                                        <a href="#twitter" target="_blank" class="fab fa-twitter"></a>
+                                        <a href="#instagram" target="_blank" class="fab fa-instagram"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-sm-6 col-md-4">
+                            <div class="team-info">
+                                <div class="column">
+                                    <a href="#URL"><img src="https://storage.googleapis.com/wcorp_public/waifulab/preview/2331e5dd707736912088ed2867b451491647767115.png" alt="" class="img-fluid" /></a>
+                                </div>
+                                <div class="team-member">
+                                    <h3 class="name-pos"><a>Võ Quốc Khánh</a></h3>
+                                    <p>Manager</p>
+                                    <div class="social">
+                                        <a href="https://www.facebook.com/profile.php?id=100008144862312" target="_blank" class="fab fa-facebook-f"></a>
+                                        <a href="#twitter" target="_blank" class="fab fa-twitter"></a>
+                                        <a href="#instagram" target="_blank" class="fab fa-instagram"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- menu section ends -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> our <span>favorite</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="icons">
+                <a class="fas fa-shopping-cart" asp-area="" asp-controller="Menu" asp-action="Xbox"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="https://cf.shopee.vn/file/a82d2e26bba39b7e23d6949b285e7686_tn" alt="">
+            </div>
+            <div class="content">
+                <h3>Hộp bí ẩn Mystery Figure</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$15.99 <span>$20.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a class="fas fa-shopping-cart" asp-area="" asp-controller="Menu" asp-action="ElderDragon"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="https://cf.shopee.vn/file/d98166a4a90145c9ea9cac33efe0a960_tn" alt="">
+            </div>
+            <div class="content">
+                <h3>Hộp Rồng ngàn tuổi</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$15.99 <span>$20.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a class="fas fa-shopping-cart" asp-area="" asp-controller="Menu" asp-action="Zed"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="https://cf.shopee.vn/file/eb9f1b51624bf92fcae0bd94742fdb66_tn" alt="">
+            </div>
+            <div class="content">
+                <h3>Hộp Zed</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$15.99 <span>$20.99</span></div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<style>
+
+    p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .w3l-team h3.name-pos a {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .w3l-team h3.name-pos a {
+        font-size: 28px;
+        color: #fff;
+        width: 100%;
+        transition: 0.3s ease-in-out;
+    }
+
+
+    .w3l-team .social a {
+        height: 3rem;
+        width: 3rem;
+        line-height: 3rem;
+        font-size: 1rem;
+        color: #fff;
+        border: var(--border);
+        margin: .3rem;
+        border-radius: 50%;
+    }
+
+        .w3l-team .social a:hover {
+            background-color: snow;
+            color: var(--main-color)
+        }
+
+
+
+        .w3l-team .social a span {
+            font-size: 12px;
+            line-height: 30px;
+            color: #ffffff;
+            transition: 0.3s ease;
+        }
+
+    .w3l-team .team-member {
+        padding: 20px 10px;
+        background: #4db5e0;
+        border-radius: var(--card-curve);
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+
+
+    :root {
+        --main-color: #38a1b9;
+        --black: #302f2f;
+        --bg: snow;
+        --border: .1rem solid rgb(0 0 0 / 30%);
+    }
+
+    * {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: .2s linear;
+    }
+
+    html {
+        font-size: 62.5%;
+        overflow-x: hidden;
+        scroll-padding-top: 9rem;
+        scroll-behavior: smooth;
+    }
+
+        html::-webkit-scrollbar {
+            width: .8rem;
+        }
+
+        html::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        html::-webkit-scrollbar-thumb {
+            background: #302f2f;
+            border-radius: 5rem;
+        }
+
+    body {
+        background: var(--bg);
+    }
+
+    section {
+        padding: 2rem 7%;
+    }
+
+    .heading {
+        text-align: center;
+        color: #302f2f;
+        text-transform: uppercase;
+        padding-bottom: 3.5rem;
+        font-size: 4rem;
+    }
+
+        .heading span {
+            color: var(--main-color);
+            text-transform: uppercase;
+        }
+
+    .btn {
+        margin-top: 1rem;
+        display: inline-block;
+        padding: .9rem 3rem;
+        font-size: 1.7rem;
+        color: #302f2f;
+        background: var(--main-color);
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+        .btn:hover {
+            letter-spacing: .2rem;
+        }
+
+    #menu-btn {
+        display: none;
+    }
+
+    .header .search-form {
+        position: absolute;
+        top: 115%;
+        right: 7%;
+        background: #fff;
+        width: 50rem;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        transform: scaleY(0);
+        transform-origin: top;
+    }
+
+        .header .search-form.active {
+            transform: scaleY(1);
+        }
+
+        .header .search-form input {
+            height: 100%;
+            width: 100%;
+            font-size: 1.6rem;
+            color: var(--black);
+            padding: 1rem;
+            text-transform: none;
+        }
+
+        .header .search-form label {
+            cursor: pointer;
+            font-size: 2.2rem;
+            margin-right: 1.5rem;
+            color: var(--black);
+        }
+
+            .header .search-form label:hover {
+                color: var(--main-color);
+            }
+
+    .header .cart-items-container {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        height: calc(100vh - 9.5rem);
+        width: 35rem;
+        background: #fff;
+        padding: 0 1.5rem;
+    }
+
+        .header .cart-items-container.active {
+            right: 0;
+        }
+
+        .header .cart-items-container .cart-item {
+            position: relative;
+            margin: 2rem 0;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+            .header .cart-items-container .cart-item .fa-times {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                font-size: 2rem;
+                cursor: pointer;
+                color: var(--black);
+            }
+
+                .header .cart-items-container .cart-item .fa-times:hover {
+                    color: var(--main-color);
+                }
+
+            .header .cart-items-container .cart-item img {
+                height: 7rem;
+            }
+
+            .header .cart-items-container .cart-item .content h3 {
+                font-size: 2rem;
+                color: var(--black);
+                padding-bottom: .5rem;
+            }
+
+            .header .cart-items-container .cart-item .content .price {
+                font-size: 1.5rem;
+                color: var(--main-color);
+            }
+
+        .header .cart-items-container .btn {
+            width: 100%;
+            text-align: center;
+        }
+
+
+
+    .about .row {
+        display: flex;
+        align-items: center;
+        background: var(--black);
+        flex-wrap: wrap;
+    }
+
+        .about .row .image {
+            flex: 1 1 45rem;
+        }
+
+            .about .row .image img {
+                width: 100%;
+            }
+
+        .about .row .content {
+            flex: 1 1 45rem;
+            padding: 2rem;
+        }
+
+            .about .row .content h3 {
+                font-size: 3rem;
+                color: #fff;
+            }
+
+            .about .row .content p {
+                font-size: 1.6rem;
+                color: #ccc;
+                padding: 1rem 0;
+                line-height: 1.8;
+            }
+
+    .menu .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: 1.5rem;
+    }
+
+        .menu .box-container .box {
+            padding: 5rem;
+            text-align: center;
+            border: 1px solid #464434;
+            background: #fff;
+        }
+
+            .menu .box-container .box img {
+                height: 10rem;
+            }
+
+            .menu .box-container .box h3 {
+                color: #302f2f;
+                font-size: 2rem;
+                padding: 1rem 0;
+            }
+
+            .menu .box-container .box .price {
+                color: #302f2f;
+                font-size: 2.5rem;
+                padding: .5rem 0;
+            }
+
+                .menu .box-container .box .price span {
+                    font-size: 1.5rem;
+                    text-decoration: line-through;
+                    font-weight: lighter;
+                }
+
+            .menu .box-container .box:hover {
+                background: #302f2f;
+            }
+
+                .menu .box-container .box:hover > * {
+                    color: #fff;
+                }
+
+    .products .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: 1.5rem;
+    }
+
+        .products .box-container .box {
+            text-align: center;
+            border: var(--border);
+            padding: 2rem;
+        }
+
+            .products .box-container .box .icons a {
+                height: 5rem;
+                width: 5rem;
+                line-height: 5rem;
+                font-size: 2rem;
+                border: var(--border);
+                color: #38a1b9;
+                margin: .3rem;
+            }
+
+                .products .box-container .box .icons a:hover {
+                    background: #302f2f;
+                }
+
+            .products .box-container .box .image {
+                padding: 2.5rem 0;
+            }
+
+                .products .box-container .box .image img {
+                    height: 25rem;
+                }
+
+            .products .box-container .box .content h3 {
+                color: #302f2f;
+                font-size: 2.5rem;
+            }
+
+            .products .box-container .box .content .stars {
+                padding: 1.5rem;
+            }
+
+                .products .box-container .box .content .stars i {
+                    font-size: 1.7rem;
+                    color: var(--main-color);
+                }
+
+            .products .box-container .box .content .price {
+                color: #302f2f;
+                font-size: 2.5rem;
+            }
+
+                .products .box-container .box .content .price span {
+                    text-decoration: line-through;
+                    font-weight: lighter;
+                    font-size: 1.5rem;
+                }
+
+
+    .contact .row {
+        display: flex;
+        background: var(--black);
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+        .contact .row .map {
+            flex: 1 1 45rem;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .contact .row form {
+            flex: 1 1 45rem;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+            .contact .row form h3 {
+                text-transform: uppercase;
+                font-size: 3.5rem;
+                color: #fff;
+            }
+
+            .contact .row form .inputBox {
+                display: flex;
+                align-items: center;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                background: var(--bg);
+                border: var(--border);
+            }
+
+                .contact .row form .inputBox span {
+                    color: #fff;
+                    font-size: 2rem;
+                    padding-left: 2rem;
+                }
+
+                .contact .row form .inputBox input {
+                    width: 100%;
+                    padding: 2rem;
+                    font-size: 1.7rem;
+                    color: #fff;
+                    text-transform: none;
+                    background: none;
+                }
+
+    .footer .links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+        gap: 1rem;
+    }
+
+        .footer .links a {
+            padding: .7rem 2rem;
+            color: #fff;
+            border: var(--border);
+            font-size: 2rem;
+        }
+
+            .footer .links a:hover {
+                background: var(--main-color);
+            }
+
+    .footer .credit {
+        font-size: 2rem;
+        color: #fff;
+        font-weight: lighter;
+        padding: 1.5rem;
+    }
+
+        .footer .credit span {
+            color: var(--main-color);
+        }
+
+    /* media queries  */
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+        .header .navbar.active {
+            right: 0;
+        }
+
+        .header .navbar a {
+            color: var(--black);
+            display: block;
+            margin: 1.5rem;
+            padding: .5rem;
+            font-size: 2rem;
+        }
+
+    .caption {
+        color: black
+    }
+</style>
+
+
