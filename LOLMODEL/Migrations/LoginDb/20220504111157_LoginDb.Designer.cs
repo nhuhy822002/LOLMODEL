@@ -10,14 +10,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LOLMODEL.Migrations.LoginDb
 {
     [DbContext(typeof(LoginDbContext))]
-    [Migration("20220407134401_LoginDbMigration")]
-    partial class LoginDbMigration
+    [Migration("20220504111157_LoginDb")]
+    partial class LoginDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.23")
+                .HasAnnotation("ProductVersion", "3.1.24")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 

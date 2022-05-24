@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace LOLMODEL.Migrations.LoginDb
 {
-    public partial class LoginDbMigration : Migration
+    public partial class LoginDb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
