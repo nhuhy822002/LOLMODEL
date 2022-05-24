@@ -18,7 +18,27 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="images\" />
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\110216802_337321220994909_5720383534190884392_n.jpg" />
+    <None Include="wwwroot\images\274676320_813908556669504_2968967466835778481_n.jpg" />
+    <None Include="wwwroot\images\boxdragon.png" />
+    <None Include="wwwroot\images\ElderDragonbox1.png" />
+    <None Include="wwwroot\images\ElderDragonbox2.png" />
+    <None Include="wwwroot\images\gif misaka mikoto gif loading.mp4" />
+    <None Include="wwwroot\images\HocVien.jpeg" />
+    <None Include="wwwroot\images\KDA.jpeg" />
+    <None Include="wwwroot\images\T-shirt.jpeg" />
+    <None Include="wwwroot\images\teamysmini.png" />
+    <None Include="wwwroot\images\teemomodel.png" />
+    <None Include="wwwroot\images\teemomodel1.png" />
+    <None Include="wwwroot\images\teemomodelsau.png" />
+    <None Include="wwwroot\images\Toysbig.jpeg" />
+    <None Include="wwwroot\images\user-astronaut-solid.svg" />
+    <None Include="wwwroot\images\yasuomodel1.png" />
+    <None Include="wwwroot\images\yssau.png" />
   </ItemGroup>
 
 </Project>
